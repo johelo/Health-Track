@@ -1,0 +1,52 @@
+.container, .container-fluid{
+  
+    background-color:RGB(220,225,230);
+  }
+  
+  .row{
+    
+    margin-bottom: 20px;
+    
+  }
+  
+  main, header, footer{
+    border: 1px black solid;
+    border-color: #C0C0C0;
+    background-color:#B0C4DE;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 1920px) {
+  
+    main{
+      height:80vh;
+      background-color:#fff;
+    }
+  }
+  
+  @media screen and (min-width: 980px) { 
+  
+    main{
+      height:65vh; 
+      background-color:#fff;
+    }
+  }
+  
+  @media screen and (min-width: 520px) { 
+  
+    main{
+      height:62vh; 
+      background-color:#fff;
+    }
+  }
+  
+  @media screen and (min-width: 360px) { 
+  
+    main{
+      height:62vh; 
+      background-color:#fff;
+    }
+  }
