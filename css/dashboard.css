@@ -1,0 +1,18 @@
+.container, .container-fluid{
+  
+    background-color: lightseagreen
+  }
+  
+  main, header, footer{
+    border: 1px black solid;
+    border-color: #C0C0C0;
+    background-color:#B0C4DE;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  botaozao{
+    border: 2px black solid;
+  }
