@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
 
     <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\dashboard.css">
 
     <script src="jquery\jquery-3.3.1.min.js"></script>
     <script src="bootstrap\js\bootstrap.min.js"></script>
@@ -71,18 +72,16 @@
         <div class="col-md">
           <h2>Health Track</h2>
         </div>
-        <div class="col-md-8 media">
-          <div class="media-body">
-            <h5 class="text-md-right mr-3 mt-4">Maria Antonia da Silva</h5>
-            <p class="text-md-right mr-3">62 quilos</p>
-            <p class="text-md-right mr-3">IMC: 22,1</p>
-            <p class="text-md-right mr-3">Pressão 120/80 mmHg NORMAL</p>
-          </div>
-          <img class="align-self-center ml-5" src="images/Dash_Exercícios.png" alt="" width="93" height="88">
+        <div class="col-sm-5"> 
+          <p class="h5 text-sm-right mt-4">Maria Antonia da Silva</p>
+          <p class="text-sm-right">62 quilos<br>IMC: 22,1<br>Pressão: 120/80 mmHg NORMAL</p>
+        </div>
+        <div class="col-sm-2 mr-4">
+          <img class="mt-4" src="images/perfil.png" alt="" width="120" height="120">
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mt-4">
         <div class="shadow p-4 mx-auto bg-light rounded col-md-7">
 
           <h3 class="page-header mb-1">Listagem de alimentos</h3>
@@ -142,6 +141,9 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <footer></footer>
+      </div>    
     </div>
   </body>
 </html>
