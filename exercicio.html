@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
     <link rel="stylesheet" href="css\dashboard.css">
+    <link rel="stylesheet" href="css\forms.css">
 
     <script src="jquery\jquery-3.3.1.min.js"></script>
     <script src="bootstrap\js\bootstrap.min.js"></script>
+    <script src="js\forms.js"></script>
   </head>
   <body>
     <div class="modal fade" id="cadastroExercício" tabindex="-1" role="dialog" aria-labelledby="cadastroExercício" aria-hidden="true">
@@ -26,23 +28,26 @@
 
             <form>
               <div class="form-group row">
-                <label for="inputData" class="col-sm-2 col-form-label text-sm-right">Data</label>
+                <label for="inputreqData" class="col-sm-2 col-form-label text-sm-right">Data</label>
                 <div class="col-sm-3">
-                  <input type="date" class="form-control" id="inputData" placeholder="Data do exercício">
+                  <input type="date" class="form-control" id="inputreqData" placeholder="Data do exercício">
+                  <span class="messageerror" id="missingData">Informe a data!</span>
                 </div>
-                <label for="inputHora" class="col-sm-1 col-form-label">Hora</label>
+                <label for="inputreqHora" class="col-sm-1 col-form-label">Hora</label>
                 <div class="col-sm-2">
-                  <input type="time" class="form-control" id="inputHora" placeholder="      :">
+                  <input type="time" class="form-control" id="inputreqHora" placeholder="      :">
+                  <span class="messageerror" id="missingHora">Informe hora!</span>
                 </div>
               </div>
 
               <div class="form-group row">
-                <label for="inputTipoatividade" class="col-sm-2 col-form-label text-sm-right">Atividade</label>
+                <label for="inputreqTipoatividade" class="col-sm-2 col-form-label text-sm-right">Atividade</label>
                 <div class="col-sm-5">
-                  <select id="inputTipoatividade" class="form-control">
+                  <select id="inputreqTipoatividade" class="form-control">
                     <option selected>Escolha o tipo</option>
                     <option>...</option>
                   </select>
+                  <span class="messageerror" id="missingAtividade">Informe a atividade!</span>
                 </div>
               </div>
 
@@ -54,9 +59,10 @@
               </div>
 
               <div class="form-group row">
-                <label for="inputCalorias" class="col-sm-2 col-form-label text-sm-right">Calorias</label>
+                <label for="inputreqCalorias" class="col-sm-2 col-form-label text-sm-right">Calorias</label>
                 <div class="col-sm-3">
-                  <input type="number" class="form-control" id="inputCalorias" placeholder="Calorias">
+                  <input type="number" class="form-control" id="inputreqCalorias" placeholder="Calorias">
+                  <span class="messageerror" id="missingCalorias">Calorias inválidas!</span>
                 </div>
               </div>
             </form>
@@ -85,7 +91,7 @@
       </div>
 
       <div class="row mt-4">
-        <div class="shadow p-4 mx-auto bg-light rounded col-sm-8">
+        <div class="shadow p-4 mx-auto bg-light rounded col-sm-8 ">
 
           <h3 class="page-header mb-1">Listagem de exercícios físicos</h3>
           <div style="height: 220px; overflow: auto;">

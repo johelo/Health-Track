@@ -8,6 +8,10 @@
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="js/login.js"></script>
   </head>
 
   <body>
@@ -19,17 +23,22 @@
       </div>
 
       <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+        <input type="text" id="inputEmail" req="true" class="form-control" placeholder="Email" autofocus>
         <label for="inputEmail">Endereço de email</label>
       </div>
+      <span class="messageerror" id="missingEmail">Informe o endereço de email!</span>
+      <span class="messageerror" id="invalidEmail">Endereço de email inválido!</span>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-        <label for="inputPassword">Senha</label>
+        <input type="password" id="inputPassword" req="true" class="form-control" placeholder="Senha">
+        <label for="inputPassword">Senha (mín. 6 caracteres)</label>
       </div>
+      <span class="messageerror">Informe a senha!</span>
 
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-      <p class="mt-5 mb-3 text-muted text-center">&copy; 2018</p>
+      <button class="btn btn-lg btn-primary btn-block" id="buttonEnter" type="submit">Entrar</button>
+      <a class="btn btn-lg btn-info btn-block" href="perfil.html" role="button">Quero me cadastrar</a>
+
+      <p class="mt-5 mb-3 text-muted text-center">&copy; Health Track 2018</p>
     </form>
   </body>
 </html>
