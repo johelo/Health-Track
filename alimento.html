@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
     <link rel="stylesheet" href="css\dashboard.css">
+    <link rel="stylesheet" href="css\forms.css">
 
     <script src="jquery\jquery-3.3.1.min.js"></script>
     <script src="bootstrap\js\bootstrap.min.js"></script>
+    <script src="js\forms.js"></script>
   </head>
   <body>
 
@@ -27,9 +29,10 @@
 
             <form>
               <div class="form-group row">
-                <label for="inputData" class="col-md-2 col-form-label text-md-right">Data</label>
+                <label for="input_req_dat_Data" class="col-md-2 col-form-label text-md-right">Data</label>
                 <div class="col-md-3">
-                  <input type="date" class="form-control" id="inputData" placeholder="Data da ingestão">
+                  <input type="text" class="form-control" id="input_req_dat_Data" placeholder="dd/mm/aaaa">
+                  <span class="messageerror">Data inválida!</span>
                 </div>
               </div>
 
@@ -40,6 +43,7 @@
                     <option selected>Escolha o tipo</option>
                     <option>...</option>
                   </select>
+                  <span class="messageerror">Data inválida!</span>
                 </div>
               </div>
 
@@ -53,7 +57,8 @@
               <div class="form-group row">
                 <label for="inputCalorias" class="col-md-2 col-form-label text-md-right">Calorias</label>
                 <div class="col-md-3">
-                  <input type="number" class="form-control" id="inputCalorias" placeholder="Calorias">
+                  <input type="text" class="form-control" id="input_req_num_Calorias" placeholder="Calorias">
+                  <span class="messageerror">Calorias inválidas!</span>
                 </div>
               </div>
             </form>

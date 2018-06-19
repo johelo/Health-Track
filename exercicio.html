@@ -28,26 +28,28 @@
 
             <form>
               <div class="form-group row">
-                <label for="inputreqData" class="col-sm-2 col-form-label text-sm-right">Data</label>
+                <label for="input_req_dat_Data" class="col-sm-2 col-form-label text-sm-right">Data</label>
                 <div class="col-sm-3">
-                  <input type="date" class="form-control" id="inputreqData" placeholder="Data do exercício">
-                  <span class="messageerror" id="missingData">Informe a data!</span>
+                  <input type="text" class="form-control" id="input_req_dat_Data" placeholder="dd/mm/aaaa">
+                  <span class="messageerror">Data inválida!</span>
                 </div>
-                <label for="inputreqHora" class="col-sm-1 col-form-label">Hora</label>
+                <label for="input_req_hor_Hora" class="col-sm-1 col-form-label">Hora</label>
                 <div class="col-sm-2">
-                  <input type="time" class="form-control" id="inputreqHora" placeholder="      :">
-                  <span class="messageerror" id="missingHora">Informe hora!</span>
+                  <input type="text" class="form-control" id="input_req_hor_Hora" placeholder="hh:mm">
+                  <span class="messageerror">Hora inválida!</span>
                 </div>
               </div>
 
               <div class="form-group row">
-                <label for="inputreqTipoatividade" class="col-sm-2 col-form-label text-sm-right">Atividade</label>
+                <label for="input_req_cbo_Tipoatividade" class="col-sm-2 col-form-label text-sm-right">Atividade</label>
                 <div class="col-sm-5">
-                  <select id="inputreqTipoatividade" class="form-control">
-                    <option selected>Escolha o tipo</option>
-                    <option>...</option>
+                  <select id="input_req_cbo_Tipoatividade" class="form-control">
+                    <option selected></option>
+                    <option>Corrida</option>
+                    <option>Caminhada</option>
+                    <option>Musculação</option>
                   </select>
-                  <span class="messageerror" id="missingAtividade">Informe a atividade!</span>
+                  <span class="messageerror">Atividade inválida!</span>
                 </div>
               </div>
 
@@ -59,10 +61,10 @@
               </div>
 
               <div class="form-group row">
-                <label for="inputreqCalorias" class="col-sm-2 col-form-label text-sm-right">Calorias</label>
+                <label for="input_req_num_Calorias" class="col-sm-2 col-form-label text-sm-right">Calorias</label>
                 <div class="col-sm-3">
-                  <input type="number" class="form-control" id="inputreqCalorias" placeholder="Calorias">
-                  <span class="messageerror" id="missingCalorias">Calorias inválidas!</span>
+                  <input type="text" class="form-control" id="input_req_num_Calorias" placeholder="Calorias">
+                  <span class="messageerror">Calorias inválidas!</span>
                 </div>
               </div>
             </form>
