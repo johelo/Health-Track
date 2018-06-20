@@ -16,26 +16,26 @@
 
   <body>
 
-    <form class="form-signin" method="GET" action="dashboard.html">
+    <form class="form-signin" method="GET" namem="login" action="dashboard.html">
       <img class="mb-4 img-fluid" src="images/HTlogo.png" width="622" height="145">
       <div class="text-center mb-4">
         <h1 class="h3 mb-3 font-weight-normal">Login do usuário</h1>
       </div>
 
       <div class="form-label-group">
-        <input type="text" id="inputEmail" req="true" class="form-control" placeholder="Email" autofocus>
-        <label for="inputEmail">Endereço de email</label>
-        <span class="messageerror" id="missingEmail">Informe o endereço de email!</span>
+        <input type="text" id="input_mail_Email" req="true" class="form-control" placeholder="Email" autofocus>
+        <label for="input_mail_Email">Endereço de email</label>
         <span class="messageerror" id="invalidEmail">Endereço de email inválido!</span>
+        <span class="messageerror" id="missingEmail">Informe o endereço de email!</span>
         </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" req="true" class="form-control" placeholder="Senha">
         <label for="inputPassword">Senha (mín. 6 caracteres)</label>
+        <input type="text" id="inputPassword" req="true" class="form-control" placeholder="Senha">
+        <span class="messageerror">Informe a senha!</span>
       </div>
-      <span class="messageerror">Informe a senha!</span>
 
-      <button class="btn btn-lg btn-primary btn-block" id="buttonEnter" type="submit">Entrar</button>
+      <button class="btn btn-lg btn-primary btn-block" id="buttonEnter" onclick="validadelogin()">Entrar</button>
       <a class="btn btn-lg btn-info btn-block" href="perfil.html" role="button">Quero me cadastrar</a>
 
       <p class="mt-5 mb-3 text-muted text-center">&copy; Health Track 2018</p>

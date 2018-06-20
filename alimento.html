@@ -37,20 +37,23 @@
               </div>
 
               <div class="form-group row">
-                <label for="inputTipoalimento" class="col-md-2 col-form-label text-md-right">Alimento</label>
+                <label for="input_req_Tipoalimento" class="col-md-2 col-form-label text-md-right">Alimento</label>
                 <div class="col-md-5">
-                  <select id="inputTipoalimento" class="form-control">
-                    <option selected>Escolha o tipo</option>
-                    <option>...</option>
+                  <select id="input_req_Tipoalimento" class="form-control">
+                    <option selected></option>
+                    <option>Café da manhã</option>
+                    <option>Almoço</option>
+                    <option>Janta</option>
+                    <option>Fruta</option>
                   </select>
-                  <span class="messageerror">Data inválida!</span>
+                  <span class="messageerror text-nowrap">Tipo de alimento inválido!</span>
                 </div>
               </div>
 
               <div class="form-group row">
-                <label for="inputDescricao" class="col-md-2 col-form-label text-md-right">Descrição</label>
+                <label for="input_Descricao" class="col-md-2 col-form-label text-md-right">Descrição</label>
                 <div class="col-md-10">
-                  <textarea class="form-control" id="inputDescricao" rows="3" placeholder="Digite a descrição do alimento"></textarea>
+                  <textarea class="form-control" id="input_Descricao" rows="3" placeholder="Digite a descrição do alimento"></textarea>
                 </div>
               </div>
 
@@ -58,7 +61,7 @@
                 <label for="inputCalorias" class="col-md-2 col-form-label text-md-right">Calorias</label>
                 <div class="col-md-3">
                   <input type="text" class="form-control" id="input_req_num_Calorias" placeholder="Calorias">
-                  <span class="messageerror">Calorias inválidas!</span>
+                  <span class="messageerror text-nowrap">Calorias inválidas!</span>
                 </div>
               </div>
             </form>
