@@ -39,10 +39,10 @@ $(document).ready(function()
         $(this).next().hide();
     });
    
-    //Valida conteúdo
+    //Valida conteúdo do campo
     function checkregexfield(fieldid, regexpr) {
-        fieldvalue = $("#"+fieldid).val().length();
-        if(fieldvalue > 0){
+        fieldvalue = $("#"+fieldid).val();
+        if(fieldvalue != ''){
             var oFieldMask = new RegExp(regexpr)
             if(oFieldMask.test(fieldvalue) == false){
                 $("#"+fieldid).next().show();
@@ -50,6 +50,17 @@ $(document).ready(function()
             }
         }
         return 1;
-    }    
-    
+    };    
+
+    //Valida conteúdo do formulário
+    $("#btn_save").click( function() {
+        var check = $("input[id^='input_req_']");
+        var len = check.length;
+        for(var i = 0; i < len; i++) {
+            if (check[i].value == '') {
+                $("#"+check[i].id).next().show();
+            }; 
+        };
+     });
+
 });

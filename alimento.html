@@ -37,9 +37,9 @@
               </div>
 
               <div class="form-group row">
-                <label for="input_req_Tipoalimento" class="col-md-2 col-form-label text-md-right">Alimento</label>
+                <label for="input_req_cbo_Tipoalimento" class="col-md-2 col-form-label text-md-right">Alimento</label>
                 <div class="col-md-5">
-                  <select id="input_req_Tipoalimento" class="form-control">
+                  <select id="input_req_cbo_Tipoalimento" class="form-control">
                     <option selected></option>
                     <option>Café da manhã</option>
                     <option>Almoço</option>
@@ -68,8 +68,8 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal"">Fechar</button>
-            <button type="button" class="btn btn-primary">Gravar</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary"id="btn_save">Gravar</button>
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@
           <div class="row">
             <div class="col-sm-12 mt-3">
               <button type="button" class="btn btn-primary float-md-right" data-toggle="modal" data-target="#cadastroAlimento" style="margin: 0 5px">Adicionar alimento</button>
-              <button type="button" class="btn btn-secondary float-md-right">Voltar</button>
+              <button type="button" class="btn btn-secondary float-md-right" onclick="window.history.back();">Voltar</button>
             </div>
           </div>
         </div>

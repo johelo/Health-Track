@@ -2,26 +2,27 @@ $(document).ready(function()
 {
     $("span").hide();
 
-    $("#inputEmail").focus(function(){
+    $("input[id^='input_']").focus(function(){
         $("span").hide();
     });
 
-    function validadelogin(){
-        if ($("#inputEmail").val().length == 0){
-            $("#inputEmail").next().show();
-            $("#inputEmail").focus();
-            return 0;
+    $("#buttonEnter").on("click", function(event) {
+        event.preventDefault();
+        var formok = 1;
+        if ($("#input_mail_Email").val().length == 0){
+            $("#input_mail_Email").next().next().show();
+            formok = 0;
         }
 
-        if ($("#inputPassword").val().length == 0){
-            $("#inputPassword").next().show();
-            $("#inputPassword").focus();
-            return 0;
+        if ($("#input_Password").val().length == 0){
+            $("#input_Password").next().next().show();
+            formok = 0;
         }
 
-        submit();
-    }
-
+        if (formok == 1){
+            document.login.submit();
+        } else {
+            return 0;
+        }
+    });
 });
-
-//      <button class="btn btn-lg btn-primary btn-block" id="buttonEnter" type="submit">Entrar</button>
